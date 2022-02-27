@@ -1,0 +1,382 @@
+/* Configurações gerais */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    font-family: var(--fontePadrao);
+}
+
+:root{
+    --fontePadrao: 'Poppins', sans-serif;
+    --color-primary:#917758 ;
+    --color-secudary:#3c2915;
+    --color-primary-light: #f5eee6;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#sobre:target{
+    scroll-margin-top: -50px;
+}
+
+/* Header */
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: var(--color-primary);
+}
+
+.menuEsquerda{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+
+
+.menuDireita{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+
+}
+
+/* Introdução */
+
+.introducao{
+    height: 100vh;
+    background-image: url(images/background-1.jpg);
+    background-size: cover;
+    padding-top: 50px;
+    background-attachment: fixed;
+    background-color: var(--color-secudary);
+}
+
+.textoIntroducao{
+    display: flex;
+    flex-direction: column; 
+    margin-top: 80px;  
+    align-items: center; 
+}
+
+.textoIntroducao h2{
+    font-size: 20px;
+    color: #917758;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.textoIntroducao h1{
+    font-size: 100px;
+    text-transform: capitalize;
+}
+
+.textoIntroducao p{
+    margin-bottom: 20px;
+}
+
+/* Sobre */
+#sobre{
+    display: flex;
+    background-color: var(--color-primary);
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.horarios{
+    width: 380px;
+    background-color: #3c2915;
+    background-image: url(images/bg-horarios.jpg);
+    background-size: cover;
+}
+
+.horarios h1{
+    color: var(--color-primary);
+}
+
+.horarios div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.horarios h1{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.sombraHorario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.795);
+}
+
+.sombraHorario h3{
+    color: #808080;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+}
+
+.tituloHorarios img{
+    height: 70px;
+}
+
+.decoracaoHorario{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.conteudoSobre{
+    width: 50%;
+    padding-top: 50px;
+}
+
+.tituloConteudo{
+    margin-bottom: 30px;
+    border-bottom: solid rgba(255, 255, 255, 0.377) 0.5px;
+}
+
+.tituloConteudo h2{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.tituloConteudo h1{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-size: 17px;
+    font-weight: 200;
+}
+
+/* Serviços */
+
+#nossosServicos{
+    background-color: var(--color-primary-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0px;
+    color: var(--color-secudary);
+    height: 105vh;
+}
+
+.servicos{
+    display: flex;
+    color: var(--color-secudary);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#nossosServicos h1{
+    font-size: 50px;
+    color: var(--color-secudary);
+}
+
+
+.servicos h2{
+    color: var(--color-secudary);
+}
+
+.servicos div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 335px;
+    margin: 5px;
+    border: solid black 1px;
+    gap: 15px;
+    padding: 10px;
+    
+}
+
+.servicos p{
+    text-align: center;
+    color: var(--color-secudary);
+}
+
+/* Agendamento */
+#agendamento{
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    gap: 30px;
+    height: 105vh;
+}
+
+#agendamento h1{
+    font-size: 60px;
+}
+
+form{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form select{
+    height: 30px;
+    color: var(--color-secudary);
+    padding: 5px;
+}
+
+option{
+    background-color: var(--color-secudary);
+    color: var(--color-primary-light)
+}
+
+#mensagem{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 1150px;
+    color: var(--color-secudary);
+    font-size: 15px;
+}
+
+#mensagem button{
+    display: flex;
+    height: 40px;
+    width: 80px;
+    margin-top: 5px;
+    background-color: var(--color-secudary);
+    border: none;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+/* Galeria de fotos */
+
+#galeria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#galeria h1{
+    font-size:60px;
+    color: var(--color-secudary);
+    margin-top: 30px;
+}
+
+.fotos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 70%;
+    align-content: center;
+    gap: 8px;
+}
+
+.fotos div img{
+    border: solid var(--color-primary) 10px;
+    width: 100%;
+}
+
+
+.fotos div img{
+    width: 250px;
+}
+
+/* Localizaçao */
+
+#localizacao{
+    background-image: url(images/bg-location.jpg);
+    height: 110vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.informacoes{
+    display: flex;
+    height: 200px;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+    background-color: #020202d0;
+    width: 90%;
+}
+
+.informacoes div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.informacoes img{
+    border: var(--color-primary) solid;
+    padding: 20px;
+    border-radius: 30%;
+
+}
+
+#localizacao iframe{
+    width: 90%;
+    height: 100%;
+}
+
+footer{
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    padding: 2px;
+    align-items: center;
+    color: white;
+    letter-spacing: 2px;
+    font-size: small;
+    font-weight: 600;
+    height: 100px;
+}
+
+footer a{
+    color: var(--color-secudary)
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer a::before{
+    content: ' 🔗';
+}
