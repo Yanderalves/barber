@@ -220,6 +220,10 @@ nav a:hover{
 }
 
 /* Agendamento */
+.container-agendamento{
+    width: 100%;
+}
+
 #agendamento{
     background-color: var(--color-primary);
     display: flex;
@@ -236,7 +240,7 @@ nav a:hover{
 
 form{
     display: flex;
-    gap: 40px;
+    gap: 80px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -260,8 +264,8 @@ option{
 #mensagem{
     display: flex;
     flex-direction: column;
-    height: 300px;
-    width: 1150px;
+    height: 250px;
+    width: 986px;
     color: var(--color-secudary);
     font-size: 15px;
 }

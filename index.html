@@ -112,35 +112,37 @@
     </section>
     <section id="agendamento">
         <h1>Faça um agendamento</h1>
-        <img src="images/bigodeJustify.png" alt="">
-            <form class="formulario" action="#" method="post">
-                <div>
-                    <label for="name">Nome:</label>
-                    <input placeholder="Digite seu nome" type="text" id="name" />
-                </div>
-                <div>
-                    <label for="number">Telefone:</label>
-                    <input placeholder="digite seu número" type="number" name="telefone" id="telefone">
-                </div>
-                <div>
-                    <label for="mail">Email:</label>
-                    <input placeholder="Digite seu email" type="email" name="email" id="email">
-                </div>
-                <div>
-                    <label for="select">Serviço:</label>
-                    <select name="serviços" id="servico">
-                        <option value="">--SELECIONE UM SERVIÇO--</option>
-                        <option value="Corte">Corte</option>
-                        <option value="barba">Barba</option>
-                        <option value="ambos">Corte e barba</option>
-                    </select>
-                </div>
-                <div id="mensagem">
-                    <label for="text">Mensagem:</label>
-                    <textarea name="" id="mensagem" cols="30" rows="10"></textarea>
-                    <button type="submit">Enviar</button>
-                </div>
-            </form>
+        <div class="container-agendamento">
+            <img src="images/bigodeJustify.png" alt="">
+                <form class="formulario" action="#" method="post">
+                    <div>
+                        <label for="name">Nome:</label>
+                        <input placeholder="Digite seu nome" type="text" id="name" />
+                    </div>
+                    <div>
+                        <label for="number">Telefone:</label>
+                        <input placeholder="digite seu número" type="number" name="telefone" id="telefone">
+                    </div>
+                    <div>
+                        <label for="mail">Email:</label>
+                        <input placeholder="Digite seu email" type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="select">Serviço:</label>
+                        <select name="serviços" id="servico">
+                            <option value="">--SELECIONE UM SERVIÇO--</option>
+                            <option value="Corte">Corte</option>
+                            <option value="barba">Barba</option>
+                            <option value="ambos">Corte e barba</option>
+                        </select>
+                    </div>
+                    <div id="mensagem">
+                        <label for="text">Mensagem:</label>
+                        <textarea name="" id="mensagem"></textarea>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+        </div>
         </section>
         <section id="galeria">
             <h1>Galeria de fotos</h1>
