@@ -1,5 +1,5 @@
 /* Configurações gerais */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,43 +8,43 @@
     font-family: var(--fontePadrao);
 }
 
-:root{
+:root {
     --fontePadrao: 'Poppins', sans-serif;
-    --color-primary:#917758 ;
-    --color-secudary:#3c2915;
+    --color-primary: #917758;
+    --color-secudary: #3c2915;
     --color-primary-light: #f5eee6;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-#sobre:target{
+#sobre:target {
     scroll-margin-top: -50px;
 }
 
 /* Header */
 
-nav{
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
 }
 
-nav a:hover{
+nav a:hover {
     text-decoration: underline;
     color: var(--color-primary);
 }
 
-.menuEsquerda{
+.menuEsquerda {
     display: flex;
     justify-content: space-around;
     width: 500px;
 }
 
 
-.menuDireita{
+.menuDireita {
     display: flex;
     justify-content: space-around;
     width: 500px;
@@ -53,7 +53,7 @@ nav a:hover{
 
 /* Introdução */
 
-.introducao{
+.introducao {
     height: 100vh;
     background-image: url(images/background-1.jpg);
     background-size: cover;
@@ -62,60 +62,61 @@ nav a:hover{
     background-color: var(--color-secudary);
 }
 
-.textoIntroducao{
+.textoIntroducao {
     display: flex;
-    flex-direction: column; 
-    margin-top: 80px;  
-    align-items: center; 
+    flex-direction: column;
+    margin-top: 80px;
+    align-items: center;
 }
 
-.textoIntroducao h2{
+.textoIntroducao h2 {
     font-size: 20px;
     color: #917758;
     text-transform: uppercase;
     font-weight: 400;
 }
 
-.textoIntroducao h1{
+.textoIntroducao h1 {
     font-size: 100px;
     text-transform: capitalize;
 }
 
-.textoIntroducao p{
+.textoIntroducao p {
     margin-bottom: 20px;
 }
 
 /* Sobre */
-#sobre{
+#sobre {
     display: flex;
     background-color: var(--color-primary);
     justify-content: space-around;
     padding: 20px;
 }
 
-.horarios{
+.horarios {
     width: 380px;
     background-color: #3c2915;
     background-image: url(images/bg-horarios.jpg);
+    background-attachment: fixed;
     background-size: cover;
 }
 
-.horarios h1{
+.horarios h1 {
     color: var(--color-primary);
 }
 
-.horarios div{
+.horarios div {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.horarios h1{
+.horarios h1 {
     text-transform: uppercase;
     font-size: 30px;
 }
 
-.sombraHorario{
+.sombraHorario {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,43 +127,43 @@ nav a:hover{
     background-color: rgba(0, 0, 0, 0.795);
 }
 
-.sombraHorario h3{
+.sombraHorario h3 {
     color: #808080;
     font-size: 15px;
     font-weight: 400;
     letter-spacing: 1.2px;
 }
 
-.tituloHorarios img{
+.tituloHorarios img {
     height: 70px;
 }
 
-.decoracaoHorario{
+.decoracaoHorario {
     font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.conteudoSobre{
+.conteudoSobre {
     width: 50%;
     padding-top: 50px;
 }
 
-.tituloConteudo{
+.tituloConteudo {
     margin-bottom: 30px;
     border-bottom: solid rgba(255, 255, 255, 0.377) 0.5px;
 }
 
-.tituloConteudo h2{
+.tituloConteudo h2 {
     font-size: 16px;
     font-weight: 400;
 }
 
-.tituloConteudo h1{
+.tituloConteudo h1 {
     font-size: 40px;
     font-weight: 300;
 }
 
-.conteudo{
+.conteudo {
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -172,59 +173,60 @@ nav a:hover{
 
 /* Serviços */
 
-#nossosServicos{
+#nossosServicos {
     background-color: var(--color-primary-light);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 40px 0px;
+    padding: 80px 0px;
     color: var(--color-secudary);
-    height: 105vh;
 }
 
-.servicos{
+.servicos {
     display: flex;
+    max-width: 1280px;
     color: var(--color-secudary);
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-#nossosServicos h1{
+#nossosServicos h1 {
     font-size: 50px;
     color: var(--color-secudary);
 }
 
 
-.servicos h2{
+.servicos h2 {
     color: var(--color-secudary);
 }
 
-.servicos div{
+.servicos div {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-grow: 1;
     align-items: center;
-    height: 450px;
-    width: 335px;
+    width: calc((100% / 3) - 10px);
     margin: 5px;
     border: solid black 1px;
     gap: 15px;
-    padding: 10px;
-    
+    padding: 20px;
+
 }
 
-.servicos p{
+.servicos p {
     text-align: center;
     color: var(--color-secudary);
 }
 
 /* Agendamento */
-.container-agendamento{
+.container-agendamento {
     width: 100%;
 }
 
-#agendamento{
+#agendamento {
     background-color: var(--color-primary);
     display: flex;
     flex-direction: column;
@@ -234,34 +236,35 @@ nav a:hover{
     height: 105vh;
 }
 
-#agendamento h1{
+#agendamento h1 {
     font-size: 60px;
 }
 
-form{
+form {
     display: flex;
     gap: 80px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-form div{
+form div {
     display: flex;
     flex-direction: column;
 }
 
-form input, form select{
+form input,
+form select {
     height: 30px;
     color: var(--color-secudary);
     padding: 5px;
 }
 
-option{
+option {
     background-color: var(--color-secudary);
     color: var(--color-primary-light)
 }
 
-#mensagem{
+#mensagem {
     display: flex;
     flex-direction: column;
     height: 250px;
@@ -270,7 +273,7 @@ option{
     font-size: 15px;
 }
 
-#mensagem button{
+#mensagem button {
     display: flex;
     height: 40px;
     width: 80px;
@@ -284,7 +287,7 @@ option{
 
 /* Galeria de fotos */
 
-#galeria{
+#galeria {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -292,36 +295,33 @@ option{
     gap: 40px;
 }
 
-#galeria h1{
-    font-size:60px;
+#galeria h1 {
+    font-size: 60px;
     color: var(--color-secudary);
     margin-top: 30px;
 }
 
-.fotos{
+.fotos {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     height: 100vh;
-    width: 70%;
+    width: 100%;
     align-content: center;
     gap: 8px;
 }
 
-.fotos div img{
+
+.fotos div img {
     border: solid var(--color-primary) 10px;
-    width: 100%;
-}
-
-
-.fotos div img{
+    object-fit: cover;
     width: 250px;
 }
 
 /* Localizaçao */
 
-#localizacao{
+#localizacao {
     background-image: url(images/bg-location.jpg);
     height: 110vh;
     background-size: cover;
@@ -331,7 +331,7 @@ option{
     padding: 50px 0px;
 }
 
-.informacoes{
+.informacoes {
     display: flex;
     height: 200px;
     justify-content: space-evenly;
@@ -341,26 +341,26 @@ option{
     width: 90%;
 }
 
-.informacoes div{
+.informacoes div {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
 }
 
-.informacoes img{
+.informacoes img {
     border: var(--color-primary) solid;
     padding: 20px;
     border-radius: 30%;
 
 }
 
-#localizacao iframe{
+#localizacao iframe {
     width: 90%;
     height: 100%;
 }
 
-footer{
+footer {
     display: flex;
     background-color: black;
     justify-content: space-around;
@@ -373,14 +373,33 @@ footer{
     height: 100px;
 }
 
-footer a{
+footer a {
     color: var(--color-secudary)
 }
 
-footer a:hover{
+footer a:hover {
     text-decoration: underline;
 }
 
-footer a::before{
+footer a::before {
     content: ' 🔗';
+}
+
+@media screen and (min-width: 320px) and (max-width:480px) {
+    .servicos div {
+        width: calc((100%) - 10px);
+
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width:768px) {
+    .servicos div {
+        width: calc((100%) - 10px);
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width:1024px) {
+    .servicos div {
+        width: calc((100% / 2) - 10px);
+    }
 }
